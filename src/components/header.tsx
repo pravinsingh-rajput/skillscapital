@@ -27,7 +27,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <div className="w-full bg-white shadow-md ">
+    <header className="w-full bg-white z-50 shadow-md ">
       <div className="max-w-7xl mx-auto p-4 flex items-center justify-between text-[#1C1E53]">
         <div className="text-xl font-bold text-[#1C1E53]">SkillsCapital</div>
         {/* Navbar */}
@@ -67,7 +67,7 @@ const Header = () => {
           </span>
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 
