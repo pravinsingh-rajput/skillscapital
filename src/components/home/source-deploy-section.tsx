@@ -28,7 +28,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-2xl font-bold mb-3">{title}</h3>
         <p className="text-gray-600 mb-6 flex-grow">{description}</p>
-        <button className="w-full bg-[#111827] text-white py-3 rounded-lg flex items-center justify-center mt-auto">
+        <button className="w-full bg-[#111827] cursor-pointer text-white py-3 rounded-lg flex items-center justify-center mt-auto">
           {buttonText}
           <span className="ml-2">→</span>
         </button>
@@ -64,7 +64,7 @@ const SourceDeploySection = () => {
 
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <SectionTitle
           title="Source & Deploy SAP Expertise Seamlessly"
           subtitle="Our AI-driven platform powers three key engagement models."

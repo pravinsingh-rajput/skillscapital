@@ -21,7 +21,7 @@ export default function CTAButton({
       className={`${isPrimary ? "btn-primary" : "btn-secondary"} ${className}`}
     >
       {text}
-      {hasArrow && <span className="ml-2">→</span>}
+      {hasArrow && <span className="ml-2 text-2xl font-bold">→</span>}
     </Link>
   );
 }

@@ -1,0 +1,73 @@
+import React from "react";
+import TechSectionHeader from "../ui/tech-section-header";
+import CTAButton from "../ui/cta-button";
+import Image from "next/image";
+import FeatureCard from "../ui/feature-card";
+
+const DeepTechAiDriven = () => {
+  const features = [
+    {
+      icon: "/assets/end-to-end-icon.svg",
+      title: "End-to-End Fit Scoring",
+      description:
+        "Combines all layers into a unified candidate readiness score for decision-making.",
+    },
+    {
+      icon: "/assets/ai-matching-icon.svg",
+      title: "AI-Assisted Behavioral Insights",
+      description:
+        "Machine learning algorithms analyze SAP resumes and job descriptions to ensure precise skill alignment.",
+    },
+    {
+      icon: "/assets/verified-icon.svg",
+      title: "Verified by External Assessments",
+      description:
+        "Third-party evaluations validate core skills across SAP, ERP, and enterprise technologies.",
+    },
+    {
+      icon: "/assets/human-insight-icon.svg",
+      title: "Human Insights for Cultural Fit",
+      description:
+        "Industry experts assess soft skills and team compatibility for enterprise-ready placements.",
+    },
+  ];
+
+  return (
+    <section className="bg-[##F4F6FC] ">
+      <div className="max-w-7xl py-10 mx-auto px-4 border-b border-gray-200">
+        <TechSectionHeader
+          icon="./assets/deep-tech-icon.svg"
+          title="Deep Tech AI-Driven Deep Vet"
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg overflow-hidden shadow-md">
+            <div className="h-full relative">
+              <Image
+                src="/assets/deep-tech-ai.png"
+                className="w-full h-full object-cover"
+                fill
+                alt="Advanced ML-Powered Precision Match"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6">
+            <FeatureCard {...features[0]} />
+            <FeatureCard {...features[1]} />
+          </div>
+          <div className="grid grid-cols-1 gap-6">
+            <FeatureCard {...features[2]} />
+            <FeatureCard {...features[3]} />
+          </div>
+        </div>
+
+        <div className="flex justify-center mt-10">
+          <CTAButton text="Our Candidate Vetting Process" href="/" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default DeepTechAiDriven;
