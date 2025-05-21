@@ -27,7 +27,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <div className="w-full bg-white shadow-md ">
+    <header className="w-full bg-white z-50 shadow-md ">
       <div className="max-w-7xl mx-auto p-4 flex items-center justify-between text-[#1C1E53]">
         <div className="text-xl font-bold text-[#1C1E53]">SkillsCapital</div>
         {/* Navbar */}
@@ -53,7 +53,7 @@ const Header = () => {
 
         {/* find Talent CTA */}
 
-        <button className="bg-whitem cursor-pointer px-4 py-1.5 flex items-center justify-center space-x-2 border rounded-full">
+        <button className="bg-white cursor-pointer px-4 py-1.5 flex items-center justify-center space-x-2 border rounded-full">
           <span className="font-bold">Find Talent</span>
 
           <span className="bg-[#FCD980] rounded-full w-8 h-8  items-center justify-center flex">
@@ -67,7 +67,7 @@ const Header = () => {
           </span>
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 
