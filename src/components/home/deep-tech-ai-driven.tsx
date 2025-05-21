@@ -24,7 +24,6 @@ const DeepTechAiDriven = () => {
       description:
         "Machine learning algorithms analyze SAP resumes and job descriptions to ensure precise skill alignment.",
     },
-
     {
       icon: "/assets/human-insight-icon.svg",
       title: "Human Insights for Cultural Fit",
@@ -34,21 +33,21 @@ const DeepTechAiDriven = () => {
   ];
 
   return (
-    <section className="bg-[#F4F6FC] ">
+    <section className="bg-[#F4F6FC]">
       <div className="max-w-7xl py-20 mx-auto px-4 border-b border-gray-300">
         <TechSectionHeader
           icon="./assets/deep-tech-icon.svg"
           title="Deep Tech AI-Driven Deep Vet"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
-          <div className="lg:col-span-4 rounded-lg overflow-hidden shadow-md">
-            <div className="aspect-square relative">
+        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 min-h-full">
+          <div className="lg:col-span-4 rounded-lg overflow-hidden shadow-md h-full">
+            <div className="relative w-full h-full min-h-[400px]">
               <Image
                 src="/assets/deep-tech-ai.png"
-                className="w-full h-full object-cover"
-                fill
                 alt="Advanced ML-Powered Precision Match"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
