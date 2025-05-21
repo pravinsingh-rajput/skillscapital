@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   buttonText,
 }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full">
+    <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full">
       <div className="h-64 relative">
         <Image
           src={imgurl || "/placeholder.svg"}
@@ -25,10 +25,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           className="object-cover"
         />
       </div>
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-6 pt-4 flex flex-col flex-grow">
         <h3 className="text-2xl font-bold mb-3">{title}</h3>
         <p className="text-gray-600 mb-6 flex-grow">{description}</p>
-        <button className="w-full bg-[#111827] cursor-pointer text-white py-3 rounded-lg flex items-center justify-center mt-auto">
+        <button className="w-full rounded-full bg-[#111827] hover:bg-[#202a3f] transition duration-300 cursor-pointer text-white py-3  flex items-center justify-center mt-auto">
           {buttonText}
           <span className="ml-2">→</span>
         </button>

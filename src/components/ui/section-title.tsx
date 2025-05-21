@@ -16,7 +16,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   return (
     <div className={`${center ? "text-center" : ""} ${className}`}>
       <h2
-        className={`section-title ${
+        className={`section-title text-[#282938] ${
           className?.includes("text-white") ? "text-white" : ""
         }`}
       >

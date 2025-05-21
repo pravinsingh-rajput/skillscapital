@@ -25,7 +25,7 @@ const EnterpriceGrade = () => {
 
   return (
     <section className="bg-[url('/assets/enterprice-bg.png')] bg-cover bg-no-repeat bg-center ">
-      <div className="py-10 relative max-w-7xl mx-auto text-white">
+      <div className="py-20 relative max-w-7xl mx-auto text-white px-4">
         <SectionTitle
           title="Enterprise-Grade SAP Talent in 48 Hours"
           subtitle="No Compromise on Quality."

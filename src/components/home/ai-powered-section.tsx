@@ -13,6 +13,12 @@ const AiPoweredSection = () => {
       description:
         "Matching algorithms evolve with every project, improving accuracy over time.",
     },
+    {
+      icon: "/assets/real-world-icon.svg",
+      title: "Trained on Real-World Data",
+      description:
+        "Models are trained on 20,000+ consultant profiles and 1,000+ client project outcomes.",
+    },
 
     {
       icon: "/assets/ai-powered-icon.svg",
@@ -20,12 +26,7 @@ const AiPoweredSection = () => {
       description:
         "Instantly identifies best-fit SAP consultants using advanced AI/ML algorithms.",
     },
-    {
-      icon: "/assets/real-world-icon.svg",
-      title: "Trained on Real-World Data",
-      description:
-        "Models are trained on 20,000+ consultant profiles and 1,000+ client project outcomes.",
-    },
+
     {
       icon: "/assets/enterprice-need-icon.svg",
       title: "Optimized for Enterprise Needs",
@@ -35,8 +36,8 @@ const AiPoweredSection = () => {
   ];
 
   return (
-    <section className="  bg-[##F4F6FC] ">
-      <div className="max-w-7xl py-10 mx-auto px-4 border-b border-gray-200">
+    <section className="  bg-[#F4F6FC] ">
+      <div className="max-w-7xl py-20 mx-auto px-4 border-b border-gray-300">
         <SectionTitle
           title="AI-Powered Deep Vet 360"
           subtitle="Precision Hiring at Scale."
@@ -47,9 +48,9 @@ const AiPoweredSection = () => {
           title="Advanced ML-Powered Precision MatchTM"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <div className="h-full relative">
+        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
+          <div className="lg:col-span-4 rounded-lg overflow-hidden shadow-md">
+            <div className="aspect-square relative">
               <Image
                 src="/assets/advance-ml.png"
                 className="w-full h-full object-cover"
@@ -59,13 +60,10 @@ const AiPoweredSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            <FeatureCard {...features[0]} />
-            <FeatureCard {...features[1]} />
-          </div>
-          <div className="grid grid-cols-1 gap-6">
-            <FeatureCard {...features[2]} />
-            <FeatureCard {...features[3]} />
+          <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {features.map((feature, index) => (
+              <FeatureCard key={index} {...feature} />
+            ))}
           </div>
         </div>
 

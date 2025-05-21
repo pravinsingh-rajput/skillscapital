@@ -13,17 +13,18 @@ const CongnitiveSection = () => {
         "Delivers data-backed insights that reduce hiring bias and enhance fairness.",
     },
     {
-      icon: "/assets/ai-assestd-icon.svg",
-      title: "AI-Assisted Behavioral Insights",
-      description:
-        "Natural Language Processing analyzes video interview responses to assess personality traits.",
-    },
-    {
       icon: "/assets/expertise-icon.svg",
       title: "Expertise Depth Evaluation",
       description:
         "NLP algorithms extract and score domain knowledge and technical fluency in real time.",
     },
+    {
+      icon: "/assets/ai-assestd-icon.svg",
+      title: "AI-Assisted Behavioral Insights",
+      description:
+        "Natural Language Processing analyzes video interview responses to assess personality traits.",
+    },
+
     {
       icon: "/assets/behaviour-icon.svg",
       title: "Behavioral Fit Mapping",
@@ -33,32 +34,29 @@ const CongnitiveSection = () => {
   ];
 
   return (
-    <section className="bg-[##F4F6FC] ">
-      <div className="max-w-7xl py-10  mx-auto px-4">
+    <section className="bg-[#F4F6FC]">
+      <div className="max-w-7xl py-20  mx-auto px-4">
         <TechSectionHeader
           icon="./assets/congnitive-icon.svg"
           title="Cognitive NLP-Processed Talent Persona"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <div className="h-full relative">
+        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
+          <div className="lg:col-span-4 rounded-lg overflow-hidden shadow-md">
+            <div className="aspect-square relative">
               <Image
                 src="/assets/congnitive.png"
-                className="w-full h-full object-cover"
+                className="object-center object-cover w-full h-full"
                 fill
                 alt="Cognitive NLP-Processed Talent Persona"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            <FeatureCard {...features[0]} />
-            <FeatureCard {...features[1]} />
-          </div>
-          <div className="grid grid-cols-1 gap-6">
-            <FeatureCard {...features[2]} />
-            <FeatureCard {...features[3]} />
+          <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {features.map((feature, index) => (
+              <FeatureCard key={index} {...feature} />
+            ))}
           </div>
         </div>
 
