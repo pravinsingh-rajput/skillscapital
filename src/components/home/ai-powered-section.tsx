@@ -48,9 +48,9 @@ const AiPoweredSection = () => {
           title="Advanced ML-Powered Precision MatchTM"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
-          <div className="lg:col-span-4 rounded-lg overflow-hidden shadow-md">
-            <div className="aspect-square relative">
+        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 min-h-full">
+          <div className="lg:col-span-4 rounded-lg overflow-hidden shadow-md h-full">
+            <div className="relative w-full h-full min-h-[400px]">
               <Image
                 src="/assets/advance-ml.png"
                 className="w-full h-full object-cover"
